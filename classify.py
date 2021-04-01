@@ -49,9 +49,9 @@ def classify(filename, return_raw=False):
     else:
         return distances
 def encode(object):
-    
+    o = object.lower()
     if("jpg" in o[-5:]) or ("png" in o[-5:]) or ("jpeg" in o[-5:]):
         return perceptor.encode_image(preprocess(Image.open(object)).unsqueeze(0).to("cpu"))
     else:
-        o = object.lower()
+        # o = object.lower()
         return perceptor.encode_text(clip.tokenize(object).cuda()).detach().clone()
