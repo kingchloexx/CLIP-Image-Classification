@@ -9,7 +9,7 @@ import subprocess
 InteractiveShell.ast_node_interactivity = "all"
 import glob
 import clip
-perceptor, preprocess = clip.load('ViT-B/32')
+perceptor, preprocess = clip.load('ViT-B/32', jit=False)
 import sys
 c_encs=[]
 categories = []
