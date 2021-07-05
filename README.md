@@ -7,7 +7,7 @@
 ```python
 !git clone https://github.com/aicrumb/CLIP-Image-Classification # if not in a notebook, run in console (w/o the "!")
 import os
-os.chdir("Image-Classification")
+os.chdir("CLIP-Image-Classification")
 
 from classify import load, classify, encode
 
