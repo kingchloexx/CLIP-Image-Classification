@@ -5,7 +5,7 @@
 ### Use
 
 ```python
-!git clone https://github.com/kingchloexx/CLIP-Image-Classification # if not in a notebook, run in console (w/o the "!")
+!git clone https://github.com/aicrumb/CLIP-Image-Classification # if not in a notebook, run in console (w/o the "!")
 import os
 os.chdir("Image-Classification")
 
@@ -89,4 +89,4 @@ pip install torch==1.7.1 torchvision==0.8.2 -f https://download.pytorch.org/whl/
 
 if you try the script and it says there are dependencies missing, usually a `pip install [dependency name]` will fix it
 
-👍 - [Chloe](https://github.com/kingchloexx)
+👍 - [Chloe](https://github.com/aicrumb)
