@@ -41,7 +41,7 @@ def load(categorylist):
 
 import PIL
 def classify(filename, return_raw=False):
-    im_enc = perceptor.encode_image(preprocess(Image.open(filename)).unsqueeze(0).to("cpu"))
+    im_enc = perceptor.encode_image(preprocess(Image.open(filename)).unsqueeze(0).to("cuda"))
     distances = [torch.cosine_similarity(e, im_enc).item() for e in c_encs]
 
     if(return_raw==False):
